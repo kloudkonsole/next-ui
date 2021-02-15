@@ -1,7 +1,8 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { connect } from 'umi';
 import { Table } from 'antd';
+import useSKUDataSource from '@/pages/op/sku/dataSource.js';
 
 const columns = [{
 	title: 'ID',
@@ -22,18 +23,7 @@ const columns = [{
 }];
 
 const SKUPage = (props) => {
-	const { skuModel, dispatch } = props;
-	const [dataSource, setDataSource] = useState([])
-
-	useEffect(() => {
-		dispatch({
-			type: 'sku/list',
-		})
-	}, [])
-
-	useEffect(() => {
-		setDataSource(Object.values(skuModel))
-	}, [skuModel])
+	const dataSource = useSKUDataSource(props)
 
 	return <Table dataSource={dataSource} columns={columns} rowKey='i' />;
 }
