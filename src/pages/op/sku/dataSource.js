@@ -1,13 +1,13 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect } from 'react';
-import { useRequest } from '@umijs/hooks';
+import { useRequest } from 'ahooks';
+import request from '@/utils/request'
 
 function getSKUPage(params) {
-  return new Promise(resolve => {
-    setTimeout(() => {
-      resolve({ success: true });
-    }, 1000);
-  });
+   return request('/1.0/sku', {
+     method: 'get',
+     params
+   })
 }
 
 export default function useSKUDataSource(props, def = {}) {
@@ -85,5 +85,5 @@ export default function useSKUDataSource(props, def = {}) {
     }))
 	}, [orgModel])
 
-  return [loading, dataSource, setParams];
+  return [dataSource, setParams, loading];
 }

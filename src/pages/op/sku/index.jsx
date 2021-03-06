@@ -23,7 +23,7 @@ const columns = [{
 }];
 
 const SKUPage = (props) => {
-	const dataSource = useSKUDataSource(props)
+	const [dataSource, setParams, loading] = useSKUDataSource(props)
 
 	return <Table dataSource={dataSource} columns={columns} rowKey='i' />;
 }
