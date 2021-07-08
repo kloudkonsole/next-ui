@@ -1,6 +1,7 @@
-# Ant Design Pro
+# Next With AntD
 
 This project is initialized with [Ant Design Pro](https://pro.ant.design). Follow is the quick guide for how to use.
+This project is no longer in development, it is here to serve as redux supermodel example [see](https://github.com/kloudkonsole/next-ui-antd/blob/feature/add-super-model/src/pages/op/sku/dataSource.js#L13)
 
 ## Environment Prepare
 
