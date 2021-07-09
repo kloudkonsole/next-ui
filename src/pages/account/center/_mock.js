@@ -105,8 +105,8 @@ export default {
   'GET  /api/fake_list': getFakeList,
   // 支持值为 Object 和 Array
   'GET  /api/currentUser': {
-    name: 'Serati Ma',
-    avatar: 'https://gw.alipayobjects.com/zos/antfincdn/XAosXuNZyF/BiazfanxmamNRoxxVxka.png',
+    name: 'Darren Liew',
+    avatar: 'https://www.flaticon.com/svg/vstatic/svg/848/848043.svg?token=exp=1613555573~hmac=9ee5e56d6a45c2005b0d0080dca9dfea',
     userid: '00000001',
     email: 'antdesign@alipay.com',
     signature: '海纳百川，有容乃大',

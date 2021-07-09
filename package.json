@@ -72,6 +72,7 @@
     "numeral": "^2.0.6",
     "nzh": "^1.0.3",
     "omit.js": "^2.0.2",
+    "pico-common": "^0.14.16",
     "prop-types": "^15.5.10",
     "qs": "^6.9.0",
     "react": "^17.0.0",
@@ -80,6 +81,7 @@
     "react-fittext": "^1.0.0",
     "react-helmet-async": "^1.0.4",
     "react-router": "^4.3.1",
+    "stub-eg": "git+https://github.com/kloudkonsole/next-eg.git",
     "umi": "^3.2.14",
     "umi-request": "^1.0.8"
   },
